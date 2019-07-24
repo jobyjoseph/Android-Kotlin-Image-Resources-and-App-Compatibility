@@ -19,3 +19,10 @@ To set the source of an imageView dynamically
 ```kotlin
 diceImage.setImageResource(drawableResource);
 ```
+
+The `lateinit` keyword promises the Kotlin compiler that the variable will be initialized before the code calls any operations on it.
+```kotlin
+lateinit var diceImage : ImageView
+```
+
+The `tools` namespace is used when you want to define placeholder content that is only used in the preview or the design editor in Android Studio. Attributes using the `tools` namespace are removed when you compile the app.
